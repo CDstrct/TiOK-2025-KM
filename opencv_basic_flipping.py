@@ -4,18 +4,15 @@ image = cv2.imread("example.jpg")
 cv2.imshow("Original", image)
 cv2.waitKey()
 
-print("[INFO] flipping image horizontally...")
 flipped = cv2.flip(image, 1)
 cv2.imshow("Flipped Horizontally", flipped)
 cv2.waitKey()
 
 flipped = cv2.flip(image, 0)
-print("[INFO] flipping image vertically...")
 cv2.imshow("Flipped Vertically", flipped)
 cv2.waitKey()
 
 flipped = cv2.flip(image, -1)
-print("[INFO] flipping image horizontally and vertically...")
 cv2.imshow("Flipped Horizontally & Vertically", flipped)
 cv2.waitKey(0)
 
